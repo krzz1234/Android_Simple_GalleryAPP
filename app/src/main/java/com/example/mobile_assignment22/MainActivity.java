@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             mCursor = getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI ,null,
-                    null, null, MediaStore.Images.Media.DATE_ADDED);
+                    null, null, MediaStore.Images.Media.DATE_ADDED+ " DESC");
             return mCursor.getCount();
         }
         @Override
