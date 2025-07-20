@@ -1,16 +1,17 @@
+
 # 📸 Android Simple Gallery App
 
-A lightweight Android gallery application built with **Java** and **Android SDK**, designed to showcase local image loading **without** using any third-party libraries like Glide, Picasso, or Fresco.
+A lightweight Android gallery application built with **Java** and **Android SDK**, designed to demonstrate how to load and display images from local storage **without using any third-party libraries** like Glide, Picasso, or Fresco.
 
 ---
 
 ## ✨ Features
 
-- 📂 Loads and displays images from local storage
-- 🔍 Lightweight and dependency-free (no Glide, Picasso, Fresco)
-- 📱 Clean and simple UI using native Android components
-- 🔄 Supports image rotation and scaling (basic gestures)
-- 🧠 Educational project to understand how gallery apps work under the hood
+- 📂 Loads and displays images from the device's local storage
+- 🔍 Completely dependency-free (no Glide, Picasso, or Fresco)
+- 📱 Clean and intuitive UI using only native Android components
+- 🔄 Supports basic image gestures like rotation and scaling
+- 🧠 Great for learning how gallery apps work under the hood
 
 ---
 
@@ -19,35 +20,57 @@ A lightweight Android gallery application built with **Java** and **Android SDK*
 ### Prerequisites
 
 - Android Studio (Chipmunk or newer recommended)
-- Android SDK 21+
+- Android SDK version 21 or higher
 - Java 8+
 
 ### Running the App
 
-1. Clone this repo:
+1. Clone the repository:
    ```bash
    git clone https://github.com/krzz1234/Android_Simple_GalleryAPP.git
-2. Open the project in Android Studio
 
-3. Connect an Android device or start an emulator
+2. Open the project in **Android Studio**
 
-4. Run the app
+3. Connect a physical device or start an emulator
 
+4. Build and run the app
 
-🛠️ Tech Stack
-Language: Java
+---
 
-Framework: Android SDK
+## 📁 Project Structure
 
-Architecture: Simple Activity-based layout
+```
+app/
+├── java/
+│   └── com.example.simplegallery/
+│       ├── MainActivity.java
+│       ├── ImageAdapter.java
+│       └── utils/
+│           └── ImageLoader.java
+├── res/
+│   ├── layout/
+│   └── drawable/
+└── AndroidManifest.xml
+```
 
-📚 Learning Goals
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Java
+* **Framework:** Android SDK
+* **Architecture:** Activity-based with RecyclerView and custom adapters
+
+---
+
+## 📚 Learning Goals
+
 This project was created to:
 
-Understand Android's native image handling mechanisms
+* Understand Android’s native image loading and decoding mechanisms
+* Learn how to access and display images from external/local storage
+* Build a fully functional gallery app without relying on external libraries
+* Practice using `RecyclerView`, `Adapter`, and custom `ViewHolder` implementations
 
-Learn how to access and display media from device storage
+```
 
-Build a functional app without external libraries
-
-Practice RecyclerView and custom adapters
